@@ -1,0 +1,14 @@
+rails generate <name of generator> <options> --no-test-framework
+
+tells rails to generate what you tell it without any tests
+
+Migration Generator
+cuts down migration creation, column addition/removal to one line; changing column datatypes or names requires manual change. 
+
+Model Generator
+generates a model and database with minimal code bloat
+
+Controller Generator
+generates everything needed and more (code bloat)
+
+rails g resource Account name:string payment_status:string --no-test-framework --> creates an app with full crud but without code bloat (no views files or filled in code in the controller, sets up resources aka paths for controller and views)
